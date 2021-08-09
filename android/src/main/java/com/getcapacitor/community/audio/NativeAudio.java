@@ -299,7 +299,7 @@ public class NativeAudio extends Plugin implements AudioManager.OnAudioFocusChan
                     return;
                 }
 
-                String fullPath = "raw/".concat(assetPath);
+                String fullPath = assetPath;
 
                 if (call.getDouble(VOLUME) == null) {
                     volume = 1.0;
@@ -327,6 +327,7 @@ public class NativeAudio extends Plugin implements AudioManager.OnAudioFocusChan
                 call.error(ERROR_AUDIO_EXISTS);
             }
         } catch (Exception ex) {
+            ex.printStackTrace();
             call.error(ex.getMessage());
         }
     }

@@ -11,14 +11,16 @@ export class NativeAudioWeb extends WebPlugin {
         throw new Error("Method not implemented.");
     }
     preloadSimple(options) {
+        console.info("preloadSimple");
         console.log(options);
-        throw new Error("Method not implemented.");
+        // throw new Error("Method not implemented.");
     }
     preloadComplex(options) {
         console.log(options);
         throw new Error("Method not implemented.");
     }
     play(options) {
+        console.info("play");
         console.log(options);
         throw new Error("Method not implemented.");
     }

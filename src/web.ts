@@ -13,6 +13,7 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudioPlugin {
     throw new Error("Method not implemented.");
   }
   preloadSimple(options: PreloadSimpleOptions): Promise<void> {
+    console.info("preloadSimple")
     console.log(options);
     throw new Error("Method not implemented.");
   }
@@ -21,6 +22,7 @@ export class NativeAudioWeb extends WebPlugin implements NativeAudioPlugin {
     throw new Error("Method not implemented.");
   }
   play(options: { assetId: string; }): Promise<void> {
+    console.info("play")
     console.log(options);
     throw new Error("Method not implemented.");
   }
